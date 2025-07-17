@@ -1,0 +1,49 @@
+.header {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_img {
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #00000020;
+}
+
+.search {
+  width: 100%;
+  height: 40px;
+  box-shadow: 0 0 4px #00000020;
+  border-radius: 6px;
+  padding:0 4px;
+}
+
+.search_input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  offset: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3b3939;
+  background-color: transparent;
+}
+
+.categories {
+  width: 100%;
+}
+
+.cart_button {
+  background-color: transparent;
+  border: none;
+}
