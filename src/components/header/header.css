@@ -1,20 +1,21 @@
 .header {
-  height: 180px;
+  height: 200px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .logo {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo_img {
-  height: 90px;
+  height: 70px;
   border-radius: 50%;
   box-shadow: 0 0 4px #00000020;
 }
@@ -41,9 +42,28 @@
 
 .categories {
   width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.categories_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.categories_item_img{
+  overflow: hidden;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px; 
+  box-shadow: 0 0 4px #00000020;
 }
 
 .cart_button {
   background-color: transparent;
   border: none;
+  color: #f00;
+  font-weight: bold;
 }
