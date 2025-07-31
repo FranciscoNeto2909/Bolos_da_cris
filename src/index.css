@@ -11,7 +11,8 @@ button {
 }
 
 :root {
-  --shadow: "#00000020";
+  --shadow: #00000020;
+  --second: #fa6d01ff
 }
 
 select{
