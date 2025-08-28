@@ -36,7 +36,7 @@ export default function Header({handleOpenCart}) {
         <input
           type="text"
           className="search_input"
-          placeholder="Bolo de formigueiro"
+          placeholder="Bolo de Formigueiro"
         />
       </div>
       <div className="categories">
