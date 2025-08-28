@@ -42,12 +42,13 @@
 }
 
 .card_size_button {
-  background-color: #00000015;
-  padding: 6px 9px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   font-weight: 900;
-  color: #000000ca;
   font-size: 18px;
+  background-color: #00000015;
+  color: #000000ca;
 }
 
 .card_price {

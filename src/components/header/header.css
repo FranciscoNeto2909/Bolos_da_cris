@@ -19,6 +19,16 @@
   align-items: center;
 }
 
+.logo_slogan{
+  padding: 6px 25px;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 25px;
+  background-color: var(--second);
+  color: #fff;
+}
+
 .logo_img {
   height: 80px;
   border-radius: 50%;

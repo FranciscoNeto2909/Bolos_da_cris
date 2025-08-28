@@ -20,6 +20,7 @@ export default function Header({handleOpenCart}) {
         <div className="logo_img_container">
           <img className="logo_img" src={logo} alt="logo" />
         </div>
+        <div className="logo_slogan">Bolos da Cris</div>
         {!hasOrder ? (
           <div className="cart">
             <button className="cart_button">cancelar pedido</button>
@@ -27,7 +28,7 @@ export default function Header({handleOpenCart}) {
         ) : (
           <div className="cart_button">
             <button onClick={handleOpenCart}>
-              <AiOutlineShoppingCart size={26} fill="#fa6d01ff" />
+              <AiOutlineShoppingCart size={35} fill="#fa6d01ff" />
             </button>
           </div>
         )}

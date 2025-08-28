@@ -1,7 +1,7 @@
 .cart_container {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: var(--shadow);
   z-index: 2;
   top: 0;
@@ -32,10 +32,11 @@
 .cart_order_button {
   width: 100%;
   background-color: var(--second);
-  padding: 4px;
+  padding: 12px;
   border-radius: 6px;
   color: #fff;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .cart_order_button:nth-child(3){
