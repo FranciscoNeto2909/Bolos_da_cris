@@ -7,17 +7,17 @@ export default function Card({ cake, key }) {
   const [price, setPrice] = useState(cake.prices[0]);
   const [size, setSize] = useState(cake.sizes[0]);
   const [inCart, setInCart] = useState(false);
-  
+
   function handleChangePrice(e) {
     setPrice(e.price);
     setSize(e.size);
   }
 
   function handleAddCake() {
-    setInCart(true)
+    setInCart(true);
   }
   function handleRemoveCake() {
-    setInCart(false)
+    setInCart(false);
   }
 
   return (
@@ -33,6 +33,7 @@ export default function Card({ cake, key }) {
               {cake.sizes.map((size, i) => (
                 <button
                   className="card_size_button"
+                  name="card_size_button"
                   key={i}
                   onClick={() =>
                     handleChangePrice({
@@ -48,21 +49,21 @@ export default function Card({ cake, key }) {
           )}
           <p className="card_price">R$:{price}</p>
         </div>
-        <div className="card-buttons">
-          {!inCart ? (
-            <button className="card_button" onClick={handleAddCake}>
-              <IoMdAddCircle size={45} fill="#fa6d01ff" />
-            </button>
-          ) : (
-            <button>
-              <IoMdRemoveCircle
-                size={45}
-                fill="#fa6d01ff"
-                onClick={handleRemoveCake}
-              />
-            </button>
-          )}
-        </div>
+      </div>
+      <div className="card-buttons">
+        {!inCart ? (
+          <button name="card_button" className="card_button" onClick={handleAddCake}>
+            <IoMdAddCircle size={45} fill="#fa6d01ff" />
+          </button>
+        ) : (
+          <button name="card_button" className="card_button">
+            <IoMdRemoveCircle
+              size={45}
+              fill="#fa6d01ff"
+              onClick={handleRemoveCake}
+            />
+          </button>
+        )}
       </div>
     </div>
   );

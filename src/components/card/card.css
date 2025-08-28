@@ -1,15 +1,16 @@
 .card {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
   height: 100px;
   background-color: #fff;
-  gap: 30px;
   position: relative;
   border-radius: 12px;
 }
 
 .card_head {
-  width: 60px;
+  width: 80px;
   display: flex;
 }
 
@@ -21,6 +22,7 @@
 
 .card_body {
   width: auto;
+  min-width: 196px;
 }
 
 .card_name{
@@ -31,6 +33,7 @@
 .card_sizes {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
   gap: 8px;
   margin-top: 8px;
 }
@@ -52,13 +55,19 @@
 }
 
 .card_price {
+  width: 100%;
+  text-align: end;
   font-weight: 900;
   color: #000000ca;
   font-size: 18px;
 }
 
 .card-buttons {
-  position: absolute;
-  bottom: 20px;
-  right: 16px;
+  padding-right: 8px;
+}
+
+@media(min-width: 768px) {
+  .card{
+    width: 370px;
+  }
 }

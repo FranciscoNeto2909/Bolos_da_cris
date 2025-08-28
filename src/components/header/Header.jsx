@@ -1,13 +1,11 @@
-import React from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import logo from "../../assets/logo.png";
 import pao from "../../assets/pao.jpg";
 import bolo from "../../assets/bolo.jpg";
 import "./header.css";
 
-export default function Header({handleOpenCart}) {
-  
-  const hasOrder = true
+export default function Header({ handleOpenCart }) {
+  const hasOrder = true;
 
   const products = [
     { img: pao, name: "Pão" },
@@ -23,11 +21,13 @@ export default function Header({handleOpenCart}) {
         <div className="logo_slogan">Bolos da Cris</div>
         {!hasOrder ? (
           <div className="cart">
-            <button className="cart_button">cancelar pedido</button>
+            <button name="cart_button" className="cart_button">
+              cancelar pedido
+            </button>
           </div>
         ) : (
-          <div className="cart_button">
-            <button onClick={handleOpenCart}>
+          <div name="cart_button" className="cart_button">
+            <button name="cart_button" onClick={handleOpenCart}>
               <AiOutlineShoppingCart size={35} fill="#fa6d01ff" />
             </button>
           </div>
@@ -42,7 +42,11 @@ export default function Header({handleOpenCart}) {
       </div>
       <div className="categories">
         {products.map((prod, i) => (
-          <button className="categories_button" key={i}>
+          <button
+            name="categories_button"
+            className="categories_button"
+            key={i}
+          >
             <div className="categories_item">
               <img
                 src={prod.img}
