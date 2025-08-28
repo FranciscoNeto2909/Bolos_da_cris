@@ -26,7 +26,7 @@ export default function Card({ cake, key }) {
         <img src={bolo} alt="bolo" className="card_img" />
       </div>
       <div className="card_body">
-        <h3>{cake.name}</h3>
+        <h3 className="card_name">{cake.name}</h3>
         <div className="card_sizes">
           {cake.sizes.length > 1 && (
             <div className="card_sizes_buttons">
@@ -51,12 +51,12 @@ export default function Card({ cake, key }) {
         <div className="card-buttons">
           {!inCart ? (
             <button className="card_button" onClick={handleAddCake}>
-              <IoMdAddCircle size={30} fill="#fa6d01ff" />
+              <IoMdAddCircle size={45} fill="#fa6d01ff" />
             </button>
           ) : (
             <button>
               <IoMdRemoveCircle
-                size={30}
+                size={45}
                 fill="#fa6d01ff"
                 onClick={handleRemoveCake}
               />
